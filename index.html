@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/4252ded0cf.js" crossorigin="anonymous"></script> -->
-
+    <script src="https://kit.fontawesome.com/4252ded0cf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>new project</title>
+    <title>Funky-Memo</title>
     
 </head>
 <body>
     <header>
-        <h1>Memo App</h1>
+        <h1>Funky-Memo</h1>
     </header>
+<main>
+    <button class="add-memo" id="add">
+       Add Memo <i class="fas fa-pen"></i>
+    </button>
+
+    <section class="note">
+        <div class="tools">
+            <button class="edit"><i class="far fa-edit"></i></button>
+            <button class="delete"><i class="far fa-trash-alt"></i></button>
+        </div>
+    </section>
+
+    <div class="hidden"></div>
+    <textarea ></textarea>  
+</main>  
     
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.7/marked.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
