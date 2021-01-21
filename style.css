@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #F0F4F8;
-  --secondary-color: #F7C948;
-  --bg-color: #610404;
+  --secondary-color: #FFF3C4;
+  --bg-color: #102A43;
   --bg-btns: #FFFBEA;
   --btns-color: #27241D;
   --shadow-color: #27241D;
@@ -85,6 +85,7 @@ main {
   padding: 4px;
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .notes .note-content button {
@@ -101,10 +102,13 @@ main {
   width: 98%;
   height: 300px;
   padding: 15px;
-  margin: 2px;
+  margin: 3px;
   outline: none;
   border: none;
   background-color: var(--secondary-color);
   border-radius: 20px;
 }
 
+.hidden {
+  display: none;
+}
