@@ -13,19 +13,24 @@
         <h1>Funky-Memo</h1>
     </header>
 <main>
+    <div class="add-content">
+        <h3>Whats on your mind?</h3>
     <button class="add-memo" id="add">
-       Add Memo <i class="fas fa-pen"></i>
+       <i class="fas fa-pen"></i>
     </button>
+</div>
 
-    <section class="note">
-        <div class="tools">
-            <button class="edit"><i class="far fa-edit"></i></button>
-            <button class="delete"><i class="far fa-trash-alt"></i></button>
+    <section class="notes">
+        <div class="note-content">
+            <button class="edit-btn"><i class="far fa-edit"></i></button>
+            <button class="delete-btn"><i class="far fa-trash-alt"></i></button>
         </div>
+
+        <div class="hidden"></div>
+        <textarea ></textarea>  
     </section>
 
-    <div class="hidden"></div>
-    <textarea ></textarea>  
+   
 </main>  
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.7/marked.min.js"></script>

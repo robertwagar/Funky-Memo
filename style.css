@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
 
+:root {
+  --primary-color: #F0F4F8;
+  --secondary-color: #F7C948;
+  --bg-color: #610404;
+  --bg-btns: #FFFBEA;
+  --btns-color: #27241D;
+  --shadow-color: #27241D;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +18,9 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background: rgb(15, 10, 44);
+  background: var(--bg-color);
   display: flex;
   flex-wrap: wrap;
-  color: #e1e2e3;
 }
 
 header {
@@ -22,6 +31,11 @@ header {
   width: 100vw;
   height: 8vh;
   padding: 2vh;
+  color: var(--primary-color);
+}
+
+header h1 {
+  text-transform: uppercase;
 }
 
 main {
@@ -29,5 +43,68 @@ main {
   margin-top: 10vh;
   margin-left: 4vw;
   padding-top: 2rem;
-
 }
+
+.add-content {
+  position: fixed;
+  top: 10vh;
+  right: 4vw;
+}
+
+.add-content h3{
+  margin-top: 2vh;
+  transform: rotate(30deg);
+  color: var(--primary-color);
+}
+
+.add-memo {
+  position: relative;
+  margin: 1rem 1rem;
+  background-color: var(--bg-btns);
+  color: var(--btns-color);
+  border: none;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border-radius: 50%;
+  filter: drop-shadow(0px 3px 2px var(--shadow-color));
+  cursor: pointer;
+}
+
+.notes {
+  background-color: var(--bg-btns);
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+  margin: 1rem 2rem;
+  height: 22rem;
+  width: 16rem;
+  border-radius: 10px;
+}
+
+.notes .note-content {
+  background: var(--bg-btns);
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes .note-content button {
+  background: var(--bg-btns);
+  color: var(--btns-color);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.notes textarea {
+  width: 98%;
+  height: 300px;
+  padding: 15px;
+  margin: 2px;
+  outline: none;
+  border: none;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+}
+
