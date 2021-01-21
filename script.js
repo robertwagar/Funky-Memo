@@ -18,10 +18,10 @@ function addNewMemo(text = '') {
         <textarea class="${text ? "hidden" : ""}" ></textarea>  
     `
 
-    const editBtn = memo.querySelector('.edit-btn')
-    const deleteBtn = memo.querySelector('.delete-btn')
     const addText = memo.querySelector('.add-text')
     const textArea = memo.querySelector('textarea')
+    const editBtn = memo.querySelector('.edit-btn')
+    const deleteBtn = memo.querySelector('.delete-btn')
 
     textArea.value = text
     addText.innerHTML = marked(text)
