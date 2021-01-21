@@ -17,8 +17,9 @@ function addNewMemo(text = '') {
     // creating template to add when a memo is done, its commented on the html
     // and added ternary operator with dynamic classes
     memo.innerHTML = `
-        <div class="memo-content">
+        <div class="memo-btns">
             <button class="edit-btn"><i class="far fa-edit"></i></button>
+            <p>Edit/Save</p>
             <button class="delete-btn"><i class="far fa-trash-alt"></i></button>
         </div>
         <div class="add-text ${text ? "" : "hidden"}"></div>
