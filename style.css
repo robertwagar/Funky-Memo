@@ -78,6 +78,7 @@ main {
   height: 20rem;
   width: 14rem;
   border-radius: 10px;
+  z-index: 2;
 }
 
 .memo .memo-content {
