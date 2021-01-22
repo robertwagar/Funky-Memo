@@ -122,6 +122,11 @@ main {
   overflow: hidden;
 }
 
+.memo .addDate {
+  text-align: center;
+  font-size: 10px;
+}
+
 .add-text {
   padding: 22px;
   background: var(--bg-color);
